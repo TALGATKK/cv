@@ -1,0 +1,21 @@
+h3 {
+  color: brown;
+  margin-left: 50px;
+  text-decoration: underline dotted;
+}
+table,
+th,
+tr,
+td {
+  width: 350px;
+  display: grid;
+  border: 1px solid black;
+  border-radius: 5%;
+}
+
+.thead {
+  text-align: left;
+  font-weight: bold;
+  color: brown;
+  margin-left: 40px;
+}

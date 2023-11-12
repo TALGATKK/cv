@@ -1,0 +1,29 @@
+$bg-color: dodgerblue;
+$general-font: "Jost", sans-serif;
+@use "nav";
+@use "left";
+@use "right";
+* {
+  font-family: $general-font;
+}
+@media screen and (max-width: 800px) {
+  .navi {
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+  }
+  .flex-container {
+    width: 380px;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+  }
+  div {
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+  }
+}

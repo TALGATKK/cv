@@ -1,0 +1,104 @@
+.navi {
+  background-color: dodgerblue;
+  display: flex;
+  flex-flow: row wrap;
+  /* This aligns items to the end line on main-axis */
+  justify-content: flex-end;
+  padding: 10px;
+  color: white;
+}
+
+.flex-container {
+  display: flex;
+  background-color: dodgerblue;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-flow: row;
+  justify-content: baseline;
+  align-items: stretch;
+  align-content: center;
+  gap: 15px;
+}
+
+.flex-container > div {
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+}
+
+.h1-first {
+  color: rgb(42, 42, 128);
+  margin-left: 50px;
+  text-shadow: 4px 4px 5px rgb(0, 47, 255);
+  letter-spacing: 7px;
+}
+
+.h2-first {
+  color: rgb(5, 74, 77);
+  margin-left: 50px;
+  text-shadow: 4px 4px 5px rgb(0, 183, 255);
+  font-size: larger;
+}
+
+.photo {
+  border: 3px solid black;
+  margin-left: 50px;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.info {
+  font-variant: inherit;
+  font-style: italic;
+  text-decoration: none;
+}
+
+h3 {
+  color: brown;
+  margin-left: 50px;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+table,
+th,
+tr,
+td {
+  width: 350px;
+  display: grid;
+  border: 1px solid black;
+  border-radius: 5%;
+}
+
+.thead {
+  text-align: left;
+  font-weight: bold;
+  color: brown;
+  margin-left: 40px;
+}
+
+* {
+  font-family: "Jost", sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+  .navi {
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+  }
+  .flex-container {
+    width: 380px;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+  }
+  div {
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+  }
+}/*# sourceMappingURL=style.css.map */
